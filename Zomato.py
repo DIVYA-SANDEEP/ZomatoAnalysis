@@ -1,5 +1,4 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 import streamlit as st
 import plotly.express as px
 from PIL import Image
@@ -17,7 +16,7 @@ col1, col2, col3 = st.columns([1,1,1])
 col2.image("icon2.png", width=100,use_column_width='always')
 
 selected = option_menu(None, ["Home","Visualization"],
-                       icons=["house",""],
+                       icons=["house","bar-chart"],
                        default_index=0,
                        orientation="horizontal",
                        styles={"nav-link": {"font-size": "15px", "text-align": "centre", "margin": "-2px", "--hover-color": "Red"},
